@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+/* resetter */
+*,
+*::before,
+*::after {
+  min-width: 0;
+  min-height: 0;
+  background-position: center center;
+  background-repeat: no-repeat;
+  object-position: center center;
+}
+ 
+*:focus,
+*:-moz-focusring {
+  outline: 0;
+}
+ 
+html {
+  line-height: 1;
+}
+ 
+body {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: normal;
+}
+ 
+li {
+  list-style-type: none;
+}
+ 
+ol li,
+ul li {
+  list-style-type: inherit;
+}
+ 
+ 
+code,
+pre,
+kbd,
+samp {
+  font-family: inherit;
+}
+ 
+b,
+strong {
+  font-weight: inherit;
+}
+ 
+address,
+cite,
+dfn,
+em,
+i,
+var {
+  font-style: inherit;
+}
+ 
+ 
+del,
+ins,
+s,
+u {
+  text-decoration: none;
+}
+ 
+mark {
+  background-color: transparent;
+  color: inherit;
+}
+ 
+q {
+  quotes: "“" "”" "‘" "’";
+}
+ 
+q::before {
+  content: open-quote;
+}
+ 
+q::after {
+  content: close-quote;
+}
+ 
+small,
+sub,
+sup {
+  font-size: inherit;
+}
+ 
+svg:not([fill]) {
+  fill: currentColor;
+}
+ 
+ 
+caption,
+th {
+  text-align: inherit;
+}
+ 
+ 
+th {
+  font-weight: inherit;
+}
+ 
+ 
+table {
+  border-spacing: 0;
+}
+ 
+ 
+button {
+  border-radius: 0;
+  font-weight: inherit;
+  text-align: inherit;
+  text-transform: inherit;
+  letter-spacing: inherit;
+}
+ 
+select {
+  text-transform: inherit;
+}
+ 
+ 
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  text-align: inherit;
+  cursor: pointer;
+}
+ 
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  opacity: 1;
+}
+ 
+button:focus,
+input[type='button']:focus,
+input[type='reset']:focus,
+input[type='submit']:focus {
+  outline: 0;
+}
+ 
+ 
+input::placeholder,
+textarea::placeholder {
+  color: inherit;
+  opacity: 0.625;
+}
+ 
+script,
+[hidden] {
+  display: none !important;
+}
+ 
+/* end reset */
+
+body {
+    text-align: left;
+    margin: a;
+}
+
+/* root end  */
+
+/* nav */
+
+.NavContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 3.5rem;
+}
+
+.NavContainer h1{
+  font-size: 24px;
+}
+
+.NavContainer nav{
+  display: flex;
+  gap: 2rem;
+}
+
+.NavContainer nav a{
+  font-size: 16px;
+  font-weight: 2rem;
+}
+
+/* end nav  */
+
+.MainContainer{
+  display: flex;
+  flex-direction: column;
+}
+
+/* hero  */
+.HeroContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5rem 0;
+  padding: 0 10rem;
+}
+
+.HeroText{
+  width: 60%;
+}
+
+.HeroText h1{
+  font-size: 36px;
+  font-weight: bold;
+  font-family: 'noto serif', serif;
+}
+
+.HeroContainer p{
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.HeroText button{
+  margin-top: 1.5rem;
+  padding: 1rem;
+  font-size: 18px;
+  font-weight: normal;
+  background-color: #ff6464;
+  color: #fff;
+  border: 0;
+}
+
+.HeroImage{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 40%;
+}
+
+/* end hero  */
+
+/* blog  */
+.BlogContainer{
+  display: flex;
+  flex-direction: column;
+  background-color: #edf7fa;
+  padding-bottom: 2rem;
+}
+
+.RecentLink{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 10rem 0;
+}
+
+.BlockArticle{
+  padding-top: 0;
+}
+
+.RecentLink h3{
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.RecentLink a{
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+}
