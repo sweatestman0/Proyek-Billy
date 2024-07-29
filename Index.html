@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Proto Portofolio Billy</title>
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <style>@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+            /* resetter */
+            *,
+            *::before,
+            *::after {
+              min-width: 0;
+              min-height: 0;
+              background-position: center center;
+              background-repeat: no-repeat;
+              object-position: center center;
+            }
+             
+            *:focus,
+            *:-moz-focusring {
+              outline: 0;
+            }
+             
+            html {
+              line-height: 1;
+            }
+             
+            body {
+              text-align: left;
+              margin: 0;
+              padding: 0;
+              font-size: 16px;
+              font-weight: normal;
+            }
+             
+            li {
+              list-style-type: none;
+            }
+             
+            ol li,
+            ul li {
+              list-style-type: inherit;
+            }
+             
+             
+            code,
+            pre,
+            kbd,
+            samp {
+              font-family: inherit;
+            }
+             
+            b,
+            strong {
+              font-weight: inherit;
+            }
+             
+            address,
+            cite,
+            dfn,
+            em,
+            i,
+            var {
+              font-style: inherit;
+            }
+             
+             
+            del,
+            ins,
+            s,
+            u {
+              text-decoration: none;
+            }
+             
+            mark {
+              background-color: transparent;
+              color: inherit;
+            }
+             
+            q {
+              quotes: "“" "”" "‘" "’";
+            }
+             
+            q::before {
+              content: open-quote;
+            }
+             
+            q::after {
+              content: close-quote;
+            }
+             
+            small,
+            sub,
+            sup {
+              font-size: inherit;
+            }
+             
+            svg:not([fill]) {
+              fill: currentColor;
+            }
+             
+             
+            caption,
+            th {
+              text-align: inherit;
+            }
+             
+             
+            th {
+              font-weight: inherit;
+            }
+             
+             
+            table {
+              border-spacing: 0;
+            }
+             
+             
+            button {
+              border-radius: 0;
+              font-weight: inherit;
+              text-align: inherit;
+              text-transform: inherit;
+              letter-spacing: inherit;
+            }
+             
+            select {
+              text-transform: inherit;
+            }
+             
+             
+            input[type="button"],
+            input[type="reset"],
+            input[type="submit"] {
+              text-align: inherit;
+              cursor: pointer;
+            }
+             
+            input[type='number']::-webkit-inner-spin-button,
+            input[type='number']::-webkit-outer-spin-button {
+              opacity: 1;
+            }
+             
+            button:focus,
+            input[type='button']:focus,
+            input[type='reset']:focus,
+            input[type='submit']:focus {
+              outline: 0;
+            }
+             
+             
+            input::placeholder,
+            textarea::placeholder {
+              color: inherit;
+              opacity: 0.625;
+            }
+             
+            script,
+            [hidden] {
+              display: none !important;
+            }
+             
+            /* end reset */
+            
+            body {
+                text-align: left;
+                margin: a;
+            }
+            
+            /* root end  */
+            
+            /* nav */
+            
+            .NavContainer{
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              padding: 16px 3.5rem;
+            }
+            
+            .NavContainer h1{
+              font-size: 24px;
+            }
+            
+            .NavContainer nav{
+              display: flex;
+              gap: 2rem;
+            }
+            
+            .NavContainer nav a{
+              font-size: 16px;
+              font-weight: 2rem;
+            }
+            
+            /* end nav  */
+            
+            .MainContainer{
+              display: flex;
+              flex-direction: column;
+            }
+            
+            /* hero  */
+            .HeroContainer{
+              display: flex;
+              flex-direction: row;
+              justify-content: space-around;
+              align-items: center;
+              margin: 5rem 0;
+              padding: 0 10rem;
+            }
+            
+            .HeroText{
+              width: 60%;
+            }
+            
+            .HeroText h1{
+              font-size: 36px;
+              font-weight: bold;
+              font-family: 'noto serif', serif;
+            }
+            
+            .HeroContainer p{
+              font-size: 18px;
+              font-weight: bold;
+              line-height: 1.5;
+            }
+            
+            .HeroText button{
+              margin-top: 1.5rem;
+              padding: 1rem;
+              font-size: 18px;
+              font-weight: normal;
+              background-color: #ff6464;
+              color: #fff;
+              border: 0;
+            }
+            
+            .HeroImage{
+              display: flex;
+              align-items: center;
+              justify-content: flex-end;
+              width: 40%;
+            }
+            
+            /* end hero  */
+            
+            /* blog  */
+            .BlogContainer{
+              display: flex;
+              flex-direction: column;
+              background-color: #edf7fa;
+              padding-bottom: 2rem;
+            }
+            
+            .RecentLink{
+              display: flex;
+              justify-content: space-between;
+              padding: 1rem 10rem 0;
+            }
+            
+            .BlockArticle{
+              padding-top: 0;
+            }
+            
+            .RecentLink h3{
+              font-size: 24px;
+              font-weight: 400;
+            }
+            
+            .RecentLink a{
+              font-size: 16px;
+              font-weight: 400;
+              text-decoration: none;
+            }
+            
+            .BlogPost{
+              display: flex;
+              flex-direction: column;
+              background-color: #fff;
+              padding: 2rem;
+              border-radius: 5px;
+              width: 42%;
+            }
+            
+            .BlogPost h3{
+              font-size: 24px;
+              font-weight: bold;
+            }
+            
+            .BlogPost p{
+              font-size: 16px;
+              font-weight: normal;
+              line-height: 1.5;
+              width: 95%;
+            }
+            
+            .BlogPostDate{
+              display: flex;
+              align-items: center;
+              font-size: 16px;
+              font-weight: 300;
+              width: 60%;
+              height: 30px;
+            }
+            
+            .BlogPostDate hr{
+              height: 70%;
+            }
+            
+            .BlogPostDate p{
+              margin: 0;
+              width: auto;
+            }
+            
+            /* end blog  */
+            
+            /* work  */
+            .WorkContainer{
+              display: flex;
+              flex-direction: column;
+              padding: 1rem 10rem 2rem;
+            }
+            
+            .WorkContainer h3{
+              font-size: 24px;
+              font-weight: 400;
+              margin-bottom: 2rem;
+            }
+            
+            .WorkContainer hr{
+              width: 100%;
+              margin: 1.5rem 0;
+              background-color: #e0e0e0;
+              border: 0;
+              height: 1px;
+            }
+            
+            .WorkArticle{
+              display: flex;
+              flex-direction: row;
+              width: 100%;
+              gap: 1rem;
+            }
+            
+            .WorkField{
+              display: flex;
+              flex-direction: column;
+              width: 80%;
+            }
+            
+            .WorkField h5{
+              font-size: 24px;
+              font-weight: bold;
+              margin: 0.1rem 0;
+            }
+            
+            .WorkField p{
+              width: 80%;
+              font-size: 16px;
+              font-weight: normal;
+              line-height: 1.5;
+            }
+            
+            .WorkFieldDate{
+              display: flex;
+              flex-direction: row;
+              width: 20%;
+              justify-content: space-between;
+              align-items: center;
+              margin-top: 0.5rem;
+            }
+            
+            .WorkFieldDate p{
+              font-size: 16px;
+              font-weight: bold;
+            }
+            
+            .Category{
+              color: #8695a4;
+              border-radius: 5px;
+            }
+            
+            .Badge{
+              background-color: #142850;
+              color: #fff;
+              padding: 0.25rem 0.5rem;
+              border-radius: 5px;
+            }
+            
+            /* end work  */
+            
+            /* footer  */
+            
+            footer{
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              padding: 1rem 0;
+            }
+            
+            footer .Icon{
+              display: flex;
+              gap: 1rem;
+              margin: 1rem 0 0 0;
+            }
+            
+            /* end footer  */
+            
+            /* responsive media */
+            
+            /* mobile start  */
+            
+            @media (max-width: 600px) {
+              .NavContainer {
+                flex-direction: column;
+                padding: 16px 1.5rem;
+              }
+            
+              .NavContainer nav {
+                flex-direction: column;
+                gap: 1rem;
+              }
+            
+              .HeroContainer {
+                flex-direction: column;
+                padding: 0 2rem;
+              }
+            
+              .HeroText {
+                width: 100%;
+              }
+            
+              .HeroImage {
+                width: 100%;
+                justify-content: center;
+              }
+            
+              .RecentLink {
+                flex-direction: column;
+                padding: 1rem 2rem 0;
+              }
+            
+              .BlogPost {
+                width: 100%;
+                margin-bottom: 2rem;
+              }
+            
+              .WorkContainer {
+                padding: 1rem 2rem 2rem;
+              }
+            
+              .WorkArticle {
+                flex-direction: column;
+              }
+            
+              .WorkField {
+                width: 100%;
+              }
+            
+              .WorkFieldDate {
+                width: 100%;
+                justify-content: flex-start;
+              }
+            }
+            </style>
+    </head>
+    <body>
+        <header class="NavContainer">
+            <h1>Billy Immanuel</h1>
+            <nav>
+                <a>Work</a>
+                <a>Blog</a>
+                <a>Contact</a>
+            </nav>
+        </header>
+        <main class="MainContainer">
+            <header class="HeroContainer">
+                <div class="HeroText">
+                    <h1>Hi, I am Billy odgj,</h1>
+                    <h1>Creative Technologist</h1>
+                    <p>
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                        Velit officia consequat duis enim velit mollit. Exercitation veniam
+                        consequat sunt nostrud amet.
+                    </p>
+                    <button>Download Resume</button>
+                </div>
+                <div class="HeroImage">
+                    <img src="https://raw.githubusercontent.com/sweatestman0/NIGG/main/Ellipse.png" alt="Billy" />
+                </div>
+            </header>
+            <section class="BlogContainer">
+                <div class="RecentLink">
+                    <h3>Recent Post</h3>
+                    <a href="#">view all</a>
+                </div>
+                <div class="BlogArticle RecentLink">
+                    <div class="BlogPost">
+                        <h3>Making a design system from scratch</h3>
+                        <div class="BlogPostDate">
+                            <p>April 16, 2020</p>
+                            <hr />
+                            <p>5 min read</p>
+                        </div>
+                        <p>
+                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+                            sint. Velit officia consequat duis enim velit mollit. Exercitation
+                            veniam consequat sunt nostrud amet.
+                        </p>
+                    </div>
+                    <div class="BlogPost">
+                        <h3>Making a design system from scratch</h3>
+                        <div class="BlogPostDate">
+                            <p>April 16, 2020</p>
+                            <hr />
+                            <p>5 min read</p>
+                        </div>
+                        <p>
+                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+                            sint. Velit officia consequat duis enim velit mollit. Exercitation
+                            veniam consequat sunt nostrud amet.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="WorkContainer">
+                <h3>Featured Work</h3>
+                <div class="WorkArticle">
+                    <img src="https://raw.githubusercontent.com/sweatestman0/NIGG/main/Rectangle.png" alt="" />
+                    <div class="WorkField">
+                        <h5>Designing Dashboards</h5>
+                        <div class="WorkFieldDate">
+                            <p class="Badge">2020</p>
+                            <p class="Category">Dashboard</p>
+                        </div>
+                        <p>
+                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+                            sint. Velit officia consequat duis enim velit mollit. Exercitation
+                            veniam consequat sunt nostrud amet.
+                        </p>
+                    </div>
+                </div>
+                <hr />
+                <div class="WorkArticle">
+                    <img src="https://raw.githubusercontent.com/sweatestman0/NIGG/main/Rectangle.png" alt="" />
+                    <div class="WorkField">
+                        <h5>Designing Dashboards</h5>
+                        <div class="WorkFieldDate">
+                            <p class="Badge">2020</p>
+                            <p class="Category">Dashboard</p>
+                        </div>
+                        <p>
+                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+                            sint. Velit officia consequat duis enim velit mollit. Exercitation
+                            veniam consequat sunt nostrud amet.
+                        </p>
+                    </div>
+                </div>
+                <hr />
+                <div class="WorkArticle">
+                    <img src="https://raw.githubusercontent.com/sweatestman0/NIGG/main/Rectangle.png" alt="" />
+                    <div class="WorkField">
+                        <h5>Designing Dashboards</h5>
+                        <div class="WorkFieldDate">
+                            <p class="Badge">2020</p>
+                            <p class="Category">Dashboard</p>
+                        </div>
+                        <p>
+                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+                            sint. Velit officia consequat duis enim velit mollit. Exercitation
+                            veniam consequat sunt nostrud amet.
+                        </p>
+                    </div>
+                </div>
+                <hr />
+            </section>
+        </main>
+        <footer>
+            <div class="Icon">
+                <box-icon type="logo" name="facebook-square"></box-icon>
+                <box-icon name="instagram" type="logo"></box-icon>
+                <box-icon name="twitter" type="logo"></box-icon>
+                <box-icon name="linkedin-square" type="logo"></box-icon>
+            </div>
+            <p>© 2020 - Billy Immanuel</p><h3></h3>
+        </footer><h1></h1>
+
+        
+    </body>
+</html>
+

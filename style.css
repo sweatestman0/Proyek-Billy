@@ -266,3 +266,193 @@ body {
   font-weight: 400;
   text-decoration: none;
 }
+
+.BlogPost{
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 5px;
+  width: 42%;
+}
+
+.BlogPost h3{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.BlogPost p{
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+  width: 95%;
+}
+
+.BlogPostDate{
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 300;
+  width: 60%;
+  height: 30px;
+}
+
+.BlogPostDate hr{
+  height: 70%;
+}
+
+.BlogPostDate p{
+  margin: 0;
+  width: auto;
+}
+
+/* end blog  */
+
+/* work  */
+.WorkContainer{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 10rem 2rem;
+}
+
+.WorkContainer h3{
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.WorkContainer hr{
+  width: 100%;
+  margin: 1.5rem 0;
+  background-color: #e0e0e0;
+  border: 0;
+  height: 1px;
+}
+
+.WorkArticle{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 1rem;
+}
+
+.WorkField{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.WorkField h5{
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0.1rem 0;
+}
+
+.WorkField p{
+  width: 80%;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+}
+
+.WorkFieldDate{
+  display: flex;
+  flex-direction: row;
+  width: 20%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.WorkFieldDate p{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.Category{
+  color: #8695a4;
+  border-radius: 5px;
+}
+
+.Badge{
+  background-color: #142850;
+  color: #fff;
+  padding: 0.25rem 0.5rem;
+  border-radius: 5px;
+}
+
+/* end work  */
+
+/* footer  */
+
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+footer .Icon{
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0 0 0;
+}
+
+/* end footer  */
+
+/* responsive media */
+
+/* mobile start  */
+
+@media (max-width: 600px) {
+  .NavContainer {
+    flex-direction: column;
+    padding: 16px 1.5rem;
+  }
+
+  .NavContainer nav {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .HeroContainer {
+    flex-direction: column;
+    padding: 0 2rem;
+  }
+
+  .HeroText {
+    width: 100%;
+  }
+
+  .HeroImage {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .RecentLink {
+    flex-direction: column;
+    padding: 1rem 2rem 0;
+  }
+
+  .BlogPost {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .WorkContainer {
+    padding: 1rem 2rem 2rem;
+  }
+
+  .WorkArticle {
+    flex-direction: column;
+  }
+
+  .WorkField {
+    width: 100%;
+  }
+
+  .WorkFieldDate {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
